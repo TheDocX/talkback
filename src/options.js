@@ -14,7 +14,10 @@ export const FallbackMode = {
 FallbackMode.ALL = [FallbackMode.NOT_FOUND, FallbackMode.PROXY]
 
 const defaultOptions = {
-  cookie: null,
+  cookie: {
+      name: null,
+      value: null
+  },
   port: 8080,
   path: "./tapes/",
   record: RecordMode.NEW,
